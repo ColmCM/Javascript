@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+/*
+This Project was checked using Windows 11 & Google Chrome. 
+*/
+
+body {
+background-color: #EFEFEF;
+font-family: "Orbitron", sans-serif;
+}
+.circleBase {
+  border-radius: 50%;
+}
+.left, .right {
+  display: inline-block;
+}
+
+.circleGreen {
+  width: 100px;
+  height: 100px;
+  background: #32cd32;
+  border: 8px solid #000;
+  margin-bottom: -100px;
+  opacity: 1;
+}
+.circleGreen:hover {
+  background: #90ee90;
+}
+.circleRed {
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  border: 8px solid #000;
+   margin-bottom: -100px;
+   opacity: 1;
+}
+.circleRed:hover{
+  background: #BF565A;
+}
+.circleYellow {
+  width: 100px;
+  height: 100px;
+  background: #ffff00;
+  border: 8px solid #000;
+  margin-top: -100px;
+  opacity: 1;
+}
+.circleYellow:hover {
+  background: #FFF9A6;
+}
+.circleBlue {
+  width: 100px;
+  height: 100px;
+  background: #0000ff;
+  border: 8px solid #000;
+  margin-top: -100px;
+  opacity: 1;
+}
+.circleBlue:hover {
+  background: #6495ED;
+}
+
+.circleBlack {
+  width: 200px;
+  height: 200px;
+  background: #000;
+  border: 1px solid #000;
+  margin-left: 100px;
+}
+.circleIndicator
+{
+  width: 20px;
+  height: 20px;
+  background: #BF565A;
+  border: 2px solid #FFFFFF;
+  margin-left: 186px;
+  margin-top: -100px;
+}
+.button1 {
+  border-radius: 50%;
+  font-family: 'Orbitron';
+}
+.ButtonContainer{
+  display: flex;
+  font-size: 30px;
+  height: 24px;
+  margin-top: -110px;
+  margin-left: 150px;
+}
+/*.WrongButtonClicked
+{
+  pointer-events: none;
+}*/

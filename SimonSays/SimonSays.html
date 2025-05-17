@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="assignment-02.css">
+</head>
+  <body>
+    <p>Simon Game</p>
+
+  <figure class="left">  <div class="circleBase circleGreen" id = "circleGreen" onclick = "gameOver()"></div> </figure>
+  <figure class="right"> <div class="circleBase circleRed" id = "circleRed" onclick = "gameOver()"></div> </figure>
+  <div class="circleBase circleBlack"> </div>
+  <figure class="left">  <div class="circleBase circleYellow" id = "circleYellow" onclick = "gameOver()"></div> </figure>
+  <figure class="right"> <div class="circleBase circleBlue" id = "circleBlue" onclick = "gameOver()"></div> </figure>
+  
+  <div class="circleBase circleIndicator" id = circleIndicator> </div>
+  <div class="ButtonContainer button1"><button id = "highscore" class = "highscore">0</button> <button onclick = "start()"><span>START</span></button> <button id = "score" class = "score">0</button>  </div>
+  
+    <script>
+    function start() //When I click the start button, it starts this function.
+    {
+     document.getElementById("score").innerHTML = 0; 
+     setIndicatorGreen();
+     setTimeout(() => colorPicked(), 3000); //After 3 seconds of green light.
+    }
+    function setIndicatorGreen()
+    { 
+      document.getElementById("circleIndicator").style.background = "#32cd32"; /*Sets Indicator to Green.*/ 
+    }
+  
+    var ColorPicker = Math.floor(Math.random() * 4); //Returns a value between 0 & 3. Gets color.
+    var colors = [0,1,2,3];
+    var Simon = []; //Simon is the array that tells me which button to press.
+    
+    function SetOpacityHalf(circleButton) //Highlights button to press
+    {
+      document.getElementById(circleButton).style.opacity = "0.5";
+      setTimeout(() => SetOpacityFull(circleButton), 500);
+      
+    }
+    function SetOpacityFull(circleButton) //Changes highlighted button to normal
+    {
+      document.getElementById(circleButton).style.opacity = "1";
+      document.getElementById(circleButton).setAttribute("onClick", "javascript :counter();");
+    }
+    function colorPicked() //This function chooses which color is picked for each level of the Simon Game.
+    { 
+     if(ColorPicker === 0) 
+     {
+      setTimeout(() => SetOpacityHalf("circleGreen"), 300);
+      return  Simon.push(0); //0 = Green
+      
+     }
+     else if(ColorPicker === 1)
+     { 
+      setTimeout(() => SetOpacityHalf("circleRed"), 300);
+      return  Simon.push(1);
+     }
+     else if(ColorPicker === 2)
+     {
+      setTimeout(() => SetOpacityHalf("circleYellow"), 300);
+      return  Simon.push(2);
+     }
+     else
+     {
+      setTimeout(() => SetOpacityHalf("circleBlue"), 300);
+      return  Simon.push(3);
+     }
+
+    }
+    function counter() //Add score, if highscore is less than score, 
+    { 
+     document.getElementById("score").innerHTML++; 
+     if(document.getElementById("highscore").innerHTML <= document.getElementById("score").innerHTML);
+     {
+      document.getElementById("highscore").innerHTML = document.getElementById("score").innerHTML;
+     }
+    }
+    function gameOver() //Game is over. Indicator is set to red and score is reset to 0.
+    { 
+      document.getElementById("circleIndicator").style.background = "#ff0000"; /*Sets color to Red */
+      document.getElementById("score").innerHTML = 0;
+    }
+   </script>
+   </body>
+</html>
