@@ -1,0 +1,97 @@
+<body>
+
+<script>
+var minimum = 0;
+function addRed() { document.getElementById("Red").innerHTML++;}
+function addOrange() { document.getElementById("Orange").innerHTML++;}
+function addYellow() { document.getElementById("Yellow").innerHTML++;}
+function addBlue() { document.getElementById("Blue").innerHTML++;}
+function addBrown() { document.getElementById("Brown").innerHTML++;}
+function addGreen() { document.getElementById("Green").innerHTML++;}
+function minusRed() { document.getElementById("Red").innerHTML--; }
+
+function minusRed() 
+{ 
+  if(document.getElementById("Red").innerHTML > 0)
+  document.getElementById("Red").innerHTML--;
+}
+function minusOrange() 
+{ 
+ if(document.getElementById("Orange").innerHTML > 0)
+  document.getElementById("Orange").innerHTML--;
+}
+function minusYellow() 
+{ 
+ if(document.getElementById("Yellow").innerHTML > 0)
+  document.getElementById("Yellow").innerHTML--;
+}
+function minusBlue() 
+{ 
+ if(document.getElementById("Blue").innerHTML > 0)
+  document.getElementById("Blue").innerHTML--;
+}
+function minusBrown() 
+{ 
+ if(document.getElementById("Brown").innerHTML > 0)
+  document.getElementById("Brown").innerHTML--;
+}
+function minusGreen() 
+{ 
+ if(document.getElementById("Green").innerHTML > 0)
+  document.getElementById("Green").innerHTML--;
+}
+
+let count = 5;
+const decrementbutton = querySelector('button')
+const displaycount = document.getElementById("displaycount");
+function decrementcount()
+{
+ if(count > 0)
+ {
+  count--;
+  countdisplay.innerHTML = count;
+ }
+ if(count === 0)
+ {
+  decrementbutton.disabled == true;
+ }
+}
+
+</script>
+
+<div class="shape one" style="text-align:center;"><div class="ButtonContainer">
+<button onclick = "addRed()", class="button button2">+</button><button id="Red" class="button button2">2</button>
+<button onclick="minusRed()", class="button button2">-</button></div></div>
+
+<div class="shape white"></div>
+ 
+<div class="shape two" style="text-align:center;"><div class="ButtonContainer2">
+<button onclick = "addOrange()", class="button button1">+</button><button id="Orange" class="button button1">4</button>
+<button onclick = "minusOrange()", class="button button1">-</button></div></div>
+
+<div class="shape white2"></div>
+ 
+<div class="shape three" style="text-align:center;"><div class="ButtonContainer3">
+<button onclick = "addYellow()", class="button button1">+</button><button id="Yellow" class="button button1">4</button>
+<button onclick = "minusYellow()", class="button button1">-</button></div></div>
+
+<div class="shape four" style="text-align:center;"><div class="ButtonContainer4">
+<button onclick = "addBlue()", class="button button1">+</button><button id="Blue" class="button button1">3</button>
+<button onclick = "minusBlue()", class="button button1">-</button></div></div>
+
+<div class="shape five" style="text-align:center;"><div class="ButtonContainer5">
+<button onclick = "addBrown()", class="button button1">+</button><button id="Brown" class="button button1">4</button>
+<button onclick = "minusBrown()", class="button button1">-</button></div></div>
+
+<div class="shape six" style="text-align:center;"><div class="ButtonContainer6">
+<button onclick = "addGreen()", class="button button1">+</button><button id="Green" class="button button1">6</button>
+<button onclick= "minusGreen()", class="button button1">-</button></div></div>
+
+<div style="text-align:center; font-size: 30px;">
+<b>My Food Pyramid</b>
+</div>
+<div style="text-align:center; font-size: 30px;">
+<input type="date">
+</div>
+
+</body>

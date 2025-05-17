@@ -1,0 +1,132 @@
+body {
+background-color: #EFEFEF;
+}
+.shape {
+margin: auto;
+}
+.one {
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 60px solid #8B0000;
+
+}
+.one:hover {
+border-bottom: 60px solid #FF7F7F;
+}
+.white {
+height: 10px;
+}
+
+.two {
+border-bottom: 75px solid #ffa500;
+border-left: 60px solid transparent;
+border-right: 60px solid transparent;
+height: 0;
+width: 100px;
+}
+.white2 {
+height: 10px;
+}
+.two:hover {
+border-bottom: 75px solid #FCD299;
+}
+.three {
+border-bottom: 100px solid #fff000;
+border-left: 80px solid transparent;
+border-right: 80px solid transparent;
+height: 0;
+width: 220px;
+}
+.three:hover {
+border-bottom: 100px solid #ffffed;
+}
+.four {
+border-bottom: 125px solid #0000FF;
+border-left: 100px solid transparent;
+border-right: 100px solid transparent;
+height: 0;
+width: 380px;
+}
+.four:hover {
+  border-bottom: 125px solid #00008B;
+}
+.five {
+border-bottom: 150px solid #964B00;
+border-left: 120px solid transparent;
+border-right: 120px solid transparent;
+height: 0;
+width: 580px;
+}
+.five:hover {
+  border-bottom: 150px solid #b5651d;
+}
+.six {
+border-bottom: 175px solid #00FF00;
+border-left: 140px solid transparent;
+border-right: 140px solid transparent;
+height: 0;
+width: 820px;
+
+}
+.six:hover {
+  border-bottom: 175px solid #90EE90;
+}
+.button {
+  background-color: #808080;
+  border-style: solid;
+  border-color: #000000;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: auto auto;
+ 
+}
+.button1 {
+  border-radius: 50%;
+ 
+}
+.button2 {
+  border-radius: 50%;
+  padding: 6px;
+ 
+}
+.ButtonContainer{
+  margin: auto -33px;
+  display: flex;
+  font-size: 30px;
+  height: 90px;
+}
+.ButtonContainer2{
+  margin: auto -13px;
+  display: flex;
+  font-size: 60px;
+  height: 60px;
+}
+.ButtonContainer3{
+  margin: auto 48px;
+  display: flex;
+  font-size: 100px;
+  height: 90px;
+}
+.ButtonContainer4{
+  margin: auto 130px;
+  display: flex;
+  font-size: 50px;
+  height: 120px;
+}
+.ButtonContainer5{
+  margin: auto 230px;
+  display: flex;
+  font-size: 60px;
+  height: 140px;
+}
+.ButtonContainer6{
+  margin: auto 350px;
+  display: flex;
+  font-size: 60px;
+  height: 160px;
+}
