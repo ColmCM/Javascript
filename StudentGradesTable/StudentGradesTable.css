@@ -1,0 +1,52 @@
+*{
+  font-family: sans-serif;
+ }
+  td
+  { 
+    border: 1px solid black;
+  }
+  table
+  {
+    border:1px solid black;
+  }
+  th
+  {
+    border:1px solid black;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  body 
+  {
+    text-align: left;
+  }
+  .tr
+  {
+    background-color: black;
+  }
+  .numbersGray
+  {
+    text-align: center;
+  }
+  .numbersWhite
+  {
+    text-align: center;
+  }
+  .tr-1
+  {
+    background-color: darkgray;
+  }
+  .tr-2
+  {
+    background-color: darkgray;
+    visibility: collapse;
+  }
+  .tr-3
+  {
+    visibility: collapse;
+  }
+  .Final
+  {
+    text-align: right;
+  }
+  

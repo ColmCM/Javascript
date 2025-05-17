@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="assignment-03-20325583.css">
+
+</head>
+<body>
+
+<h1>Assignment 03</h1>
+<p>Made by Colm Mooney - 20325583</p>
+
+<table style="width:100%">
+    <heading>
+    <tr>
+     <th>Student Name</th>
+     <th>Student ID</th>
+     <th>Assignment 1</th>
+     <th>Assignment 2</th>
+     <th>Assignment 3</th>
+     <th>Assignment 4</th>
+     <th>Assignment 5</th>
+     <th>Results</th>
+     <th onclick = "TableTwo()" id = "ResultHeader">Average (%)</th>
+    </tr>
+    </heading>
+    <body onload = "Yellow()">
+
+        <tr class="tr-1"> <td>Aerith Ainsborough</td><td>2033525 </td>  <td contenteditable="true", class="numbersGray numbers1", id = "Assignment1-1">-</td> <td contenteditable="true", class="numbersGray numbers1",id = "Assignment1-2">-</td> <td contenteditable="true", class="numbersGray numbers1",id = "Assignment1-3">-</td> <td contentEditable="true", class="numbersGray numbers1", id = "Assignment1-4">-</td> <td contentEditable="true", class="numbersGray numbers1", id = "Assignment1-5">-</td> <td id = "Results1">0</td> <td class="Final FinalGradeGray", id = "Mean1">0 </td> </tr>
+        <tr class> <td>Beyond Birthday</td><td>2412523 </td>     <td contenteditable="true", class="numbersWhite numbers2", id = "Assignment2-1">-</td> <td contenteditable="true", class="numbersWhite numbers2",id = "Assignment2-2">-</td> <td contenteditable="true", class="numbersWhite numbers2",id = "Assignment2-3">-</td> <td contentEditable="true", class="numbersWhite numbers2", id = "Assignment2-4">-</td> <td contentEditable="true", class="numbersWhite numbers2", id = "Assignment2-5">-</td> <td id = "Results2">0</td> <td class="Final FinalGradeWhite", id = "Mean2">0 </td> </tr>
+        <tr class="tr-1"> <td>Concrete Clay</td><td>1234567 </td>       <td contenteditable="true", class="numbersGray numbers3", id = "Assignment3-1">-</td> <td contenteditable="true", class="numbersGray numbers3",id = "Assignment3-2">-</td> <td contenteditable="true", class="numbersGray numbers3",id = "Assignment3-3">-</td> <td contentEditable="true", class="numbersGray numbers3", id = "Assignment3-4">-</td> <td contentEditable="true", class="numbersGray numbers3", id = "Assignment3-5">-</td> <td id = "Results3">0</td> <td class="Final FinalGradeGray", id = "Mean3">0 </td> </tr>
+        <tr class> <td>Diamond Dogs</td><td>1234576 </td>        <td contenteditable="true", class="numbersWhite numbers4", id = "Assignment4-1">-</td> <td contenteditable="true", class="numbersWhite numbers4",id = "Assignment4-2">-</td> <td contenteditable="true", class="numbersWhite numbers4",id = "Assignment4-3">-</td> <td contentEditable="true", class="numbersWhite numbers4", id = "Assignment4-4">-</td> <td contentEditable="true", class="numbersWhite numbers4", id = "Assignment4-5">-</td> <td id = "Results4">0</td> <td class="Final FinalGradeWhite", id = "Mean4">0 </td> </tr>
+        <tr class="tr-1"> <td>Echo Emmerich</td><td>12467534 </td>      <td contenteditable="true", class="numbersGray numbers5", id = "Assignment5-1">-</td> <td contenteditable="true", class="numbersGray numbers5",id = "Assignment5-2">-</td> <td contenteditable="true", class="numbersGray numbers5",id = "Assignment5-3">-</td> <td contentEditable="true", class="numbersGray numbers5", id = "Assignment5-4">-</td> <td contentEditable="true", class="numbersGray numbers5", id = "Assignment5-5">-</td> <td id = "Results5">0</td> <td class="Final FinalGradeGray", id = "Mean5">0 </td> </tr>
+        <tr class> <td>Frieza Fargo </td><td>2246361 </td>       <td contenteditable="true", class="numbersWhite numbers6", id = "Assignment6-1">-</td> <td contenteditable="true", class="numbersWhite numbers6",id = "Assignment6-2">-</td> <td contenteditable="true", class="numbersWhite numbers6",id = "Assignment6-3">-</td> <td contentEditable="true", class="numbersWhite numbers6", id = "Assignment6-4">-</td> <td contentEditable="true", class="numbersWhite numbers6", id = "Assignment6-5">-</td> <td id = "Results6">0</td> <td class="Final FinalGradeWhite", id = "Mean6">0 </td> </tr>
+        <tr class="tr-1"> <td>Giorno Giovanna </td><td> 7001234</td>    <td contenteditable="true", class="numbersGray numbers7", id = "Assignment7-1">-</td> <td contenteditable="true", class="numbersGray numbers7",id = "Assignment7-2">-</td> <td contenteditable="true", class="numbersGray numbers7",id = "Assignment7-3">-</td> <td contentEditable="true", class="numbersGray numbers7", id = "Assignment7-4">-</td> <td contentEditable="true", class="numbersGray numbers7", id = "Assignment7-5">-</td> <td id = "Results7">0</td> <td class="Final FinalGradeGray", id = "Mean7">0 </td> </tr>
+        <tr class> <td>Headless Horseman </td><td>7002639 </td>  <td contenteditable="true", class="numbersWhite numbers8", id = "Assignment8-1">-</td> <td contenteditable="true", class="numbersWhite numbers8",id = "Assignment8-2">-</td> <td contenteditable="true", class="numbersWhite numbers8",id = "Assignment8-3">-</td> <td contentEditable="true", class="numbersWhite numbers8", id = "Assignment8-4">-</td> <td contentEditable="true", class="numbersWhite numbers8", id = "Assignment8-5">-</td> <td id = "Results8">0</td> <td class="Final FinalGradeWhite", id = "Mean8">0 </td> </tr>
+        <tr class="tr-1"> <td>Indigo Ink </td><td>3241236 </td>         <td contenteditable="true", class="numbersGray numbers9", id = "Assignment9-1">-</td> <td contenteditable="true", class="numbersGray numbers9",id = "Assignment9-2">-</td> <td contenteditable="true", class="numbersGray numbers9",id = "Assignment9-3">-</td> <td contentEditable="true", class="numbersGray numbers9", id = "Assignment9-4">-</td> <td contentEditable="true", class="numbersGray numbers9", id = "Assignment9-5">-</td> <td id = "Results9">0</td> <td class="Final FinalGradeGray", id = "Mean9">0 </td> </tr>
+        <tr class="tr-3"><td>Joseph Joestar </td><td>1061214 </td>     <td contenteditable="true", class="numbersWhite numbers10", id = "Assignment10-1">-</td><td contenteditable="true", class="numbersWhite numbers10",id = "Assignment10-2">-</td><td contenteditable="true", class="numbersWhite numbers10",id = "Assignment10-3">-</td><td contentEditable="true", class="numbersWhite numbers10", id = "Assignment10-4">-</td><td contentEditable="true", class="numbersWhite numbers10", id = "Assignment10-5">-</td> <td id= "Results10">0</td><td class="Final FinalGradeWhite", id = "Mean10">0 </td> </tr>
+
+        <tr class="tr-3" id = "newRow1"><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true", class="numbersWhite numbers11", id = "Assignment11-1">-</td><td contenteditable="true", class="numbersWhite numbers11",id = "Assignment11-2">-</td><td contenteditable="true", class="numbersWhite numbers11",id = "Assignment11-3">-</td><td contentEditable="true", class="numbersWhite numbers11", id = "Assignment11-4">-</td><td contentEditable="true", class="numbersWhite numbers11", id = "Assignment11-5">-</td> <td id= "Results11">0</td><td class="Final FinalGradeWhite", id = "Mean11">0 </td> </tr>
+        <tr class="tr-2" id = "newRow2"><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true", class="numbersGray numbers12", id = "Assignment12-1">-</td><td contenteditable="true", class="numbersGray numbers12",id = "Assignment12-2">-</td><td contenteditable="true", class="numbersGray numbers12",id = "Assignment12-3">-</td><td contentEditable="true", class="numbersGray numbers12", id = "Assignment12-4">-</td><td contentEditable="true", class="numbersGray numbers12", id = "Assignment12-5">-</td> <td id= "Results12">0</td><td class="Final FinalGradeGray", id = "Mean12">0 </td> </tr>
+        <tr class="tr-3" id = "newRow3"><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true", class="numbersWhite numbers13", id = "Assignment13-1">-</td><td contenteditable="true", class="numbersWhite numbers13",id = "Assignment13-2">-</td><td contenteditable="true", class="numbersWhite numbers13",id = "Assignment13-3">-</td><td contentEditable="true", class="numbersWhite numbers13", id = "Assignment13-4">-</td><td contentEditable="true", class="numbersWhite numbers13", id = "Assignment13-5">-</td> <td id= "Results13">0</td><td class="Final FinalGradeWhite", id = "Mean13">0 </td> </tr>
+        <tr class="tr-2" id = "newRow4"><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true", class="numbersGray numbers14", id = "Assignment14-1">-</td><td contenteditable="true", class="numbersGray numbers14",id = "Assignment14-2">-</td><td contenteditable="true", class="numbersGray numbers14",id = "Assignment14-3">-</td><td contentEditable="true", class="numbersGray numbers14", id = "Assignment14-4">-</td><td contentEditable="true", class="numbersGray numbers14", id = "Assignment14-5">-</td> <td id= "Results14">0</td><td class="Final FinalGradeGray", id = "Mean14">0 </td> </tr>
+        <tr class="tr-3" id = "newRow5"><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true", class="numbersWhite numbers15", id = "Assignment15-1">-</td><td contenteditable="true", class="numbersWhite numbers15",id = "Assignment15-2">-</td><td contenteditable="true", class="numbersWhite numbers15",id = "Assignment15-3">-</td><td contentEditable="true", class="numbersWhite numbers15", id = "Assignment15-4">-</td><td contentEditable="true", class="numbersWhite numbers15", id = "Assignment15-5">-</td> <td id= "Results15">0</td><td class="Final FinalGradeWhite", id = "Mean15">0 </td> </tr>
+    </body>
+</table>
+
+<h4>Unsubmitted Assignments: <span id="counter"></span></h4>
+<button onclick="CalculateResults()">Calculate</button>
+<button onclick = "GPA()">GPA</button>
+<button onclick = "LetterGrade()">LetterGrade</button>
+<button onclick = "addRows()">Add Rows</button>
+<button onclick = "Percentage()">Change Grade Standard</button>
+
+
+ <script>
+        let x = document.getElementsByClassName("numbersGray");
+        let z = document.getElementsByClassName("numbersWhite");
+        let maria = document.getElementsByClassName("FinalGradeGray");
+        let shadow = document.getElementsByClassName("FinalGradeWhite");
+        let Final = document.getElementsByClassName("Final");
+        let counterRow = 0;
+        
+    function Yellow()
+    {   if(counterRow == 0)
+        {
+            document.getElementById("counter").innerHTML = 50;
+        }
+        
+        //Changes the Gray columns to Yellow
+        for(let i = 0; i < x.length; i++)
+        {
+            if(x[i].innerHTML === "-")
+            {
+                x[i].style.background = "#ffff00";
+                
+            }
+        }
+        //Changes the White columns to Yellow
+        for(let j = 0; j < z.length; j++)
+        {
+            if(z[j].innerHTML === "-")
+            {
+                z[j].style.background = "#ffff00";
+                
+            }
+        }
+    }
+    function CalculateResults()
+    {
+        document.getElementById("ResultHeader").innerHTML = "Average (%)";
+        //document.getElementById("counter").innerHTML = 50;
+       //Get Assignments from classnames
+       const assignment1 = document.querySelectorAll(".numbers1");
+       const assignment2 = document.querySelectorAll(".numbers2");
+       const assignment3 = document.querySelectorAll(".numbers3");
+       const assignment4 = document.querySelectorAll(".numbers4");
+       const assignment5 = document.querySelectorAll(".numbers5");
+       const assignment6 = document.querySelectorAll(".numbers6");
+       const assignment7 = document.querySelectorAll(".numbers7");
+       const assignment8 = document.querySelectorAll(".numbers8");
+       const assignment9 = document.querySelectorAll(".numbers9");
+       const assignment10 = document.querySelectorAll(".numbers10");
+       const assignment11 = document.querySelectorAll(".numbers11");
+       const assignment12 = document.querySelectorAll(".numbers12");
+       const assignment13 = document.querySelectorAll(".numbers13");
+       const assignment14 = document.querySelectorAll(".numbers14");
+       const assignment15 = document.querySelectorAll(".numbers15");
+       
+       //Sum for assignments.
+       let sum1 = 0;
+       let sum2 = 0;
+       let sum3 = 0;
+       let sum4 = 0;
+       let sum5 = 0;
+       let sum6 = 0;
+       let sum7 = 0;
+       let sum8 = 0;
+       let sum9 = 0;
+       let sum10 = 0;
+       let sum11 = 0;
+       let sum12 = 0;
+       let sum13 = 0;
+       let sum14 = 0;
+       let sum15 = 0;
+
+       //Loop through assignments and add to sum if a value is bigger than 100, it goes down to 100.
+       assignment1.forEach((assignment1) => { 
+        if(parseInt(assignment1.innerText) > 100)
+        { sum1+= 100;}
+        else if(assignment1.innerText === "-")
+        { sum1+= 0; }
+        else
+        { sum1 += parseInt(assignment1.innerText); }});
+        assignment2.forEach((assignment2) => { 
+        if(parseInt(assignment2.innerText) > 100)
+        { sum2 += 100;}
+        else if(assignment2.innerText === "-")
+        { sum2 += 0; }
+        else
+        { sum2 += parseInt(assignment2.innerText); }});
+        assignment3.forEach((assignment3) => { 
+        if(parseInt(assignment3.innerText) > 100)
+        { sum3 += 100;}
+        else if(assignment3.innerText === "-")
+        { sum3 += 0; }
+        else
+        { sum3 += parseInt(assignment3.innerText); }});
+        assignment4.forEach((assignment4) => { 
+        if(parseInt(assignment4.innerText) > 100)
+        { sum4 += 100;}
+        else if(assignment4.innerText === "-")
+        { sum4 += 0; }
+        else
+        { sum4 += parseInt(assignment4.innerText); }});
+        assignment5.forEach((assignment5) => { 
+        if(parseInt(assignment5.innerText) > 100)
+        { sum5 += 100;}
+        else if(assignment5.innerText === "-")
+        { sum5 += 0; }
+        else
+        { sum5 += parseInt(assignment5.innerText); }});
+        assignment6.forEach((assignment6) => { 
+        if(parseInt(assignment6.innerText) > 100)
+        { sum6 += 100;}
+        else if(assignment6.innerText === "-")
+        { sum6+= 0; }
+        else
+        { sum6 += parseInt(assignment6.innerText); }});
+        assignment7.forEach((assignment7) => { 
+        if(parseInt(assignment7.innerText) > 100)
+        { sum7 += 100;}
+        else if(assignment7.innerText === "-")
+        { sum7 += 0; }
+        else
+        { sum7 += parseInt(assignment7.innerText); }});
+        assignment8.forEach((assignment8) => { 
+        if(parseInt(assignment8.innerText) > 100)
+        { sum8 += 100;}
+        else if(assignment8.innerText === "-")
+        { sum8 += 0; }
+        else
+        { sum8 += parseInt(assignment8.innerText); }});
+        assignment9.forEach((assignment9) => { 
+        if(parseInt(assignment9.innerText) > 100)
+        { sum9 += 100;}
+        else if(assignment9.innerText === "-")
+        { sum9 += 0; }
+        else
+        { sum9 += parseInt(assignment9.innerText); }});
+        assignment10.forEach((assignment10) => { 
+        if(parseInt(assignment10.innerText) > 100)
+        { sum10 += 100;}
+        else if(assignment10.innerText === "-")
+        { sum10 += 0; }
+        else
+        { sum10 += parseInt(assignment10.innerText); }});
+        assignment11.forEach((assignment11) => { 
+        if(parseInt(assignment11.innerText) > 100)
+        { sum11 += 100;}
+        else if(assignment11.innerText === "-")
+        { sum11 += 0; }
+        else
+        { sum11 += parseInt(assignment11.innerText); }});
+        assignment12.forEach((assignment12) => { 
+        if(parseInt(assignment12.innerText) > 100)
+        { sum12 += 100;}
+        else if(assignment12.innerText === "-")
+        { sum12 += 0; }
+        else
+        { sum12 += parseInt(assignment12.innerText); }});
+        assignment13.forEach((assignment13) => { 
+        if(parseInt(assignment13.innerText) > 100)
+        { sum13 += 100;}
+        else if(assignment13.innerText === "-")
+        { sum13 += 0; }
+        else
+        { sum13 += parseInt(assignment13.innerText); }});
+        assignment14.forEach((assignment14) => { 
+        if(parseInt(assignment14.innerText) > 100)
+        { sum14 += 100;}
+        else if(assignment14.innerText === "-")
+        { sum14 += 0; }
+        else
+        { sum14 += parseInt(assignment14.innerText); }});
+        assignment15.forEach((assignment15) => { 
+        if(parseInt(assignment15.innerText) > 100)
+        { sum15 += 100;}
+        else if(assignment15.innerText === "-")
+        { sum15 += 0; }
+        else
+        { sum15 += parseInt(assignment15.innerText); }});
+
+       //Rounded average results
+       let mean1 = Math.round(sum1/5);
+       let mean2 = Math.round(sum2/5);
+       let mean3 = Math.round(sum3/5);
+       let mean4 = Math.round(sum4/5);
+       let mean5 = Math.round(sum5/5);
+       let mean6 = Math.round(sum6/5);
+       let mean7 = Math.round(sum7/5);
+       let mean8 = Math.round(sum8/5);
+       let mean9 = Math.round(sum9/5);
+       let mean10 = Math.round(sum10/5);
+       let mean11 = Math.round(sum11/5);
+       let mean12 = Math.round(sum12/5);
+       let mean13 = Math.round(sum13/5);
+       let mean14 = Math.round(sum14/5);
+       let mean15 = Math.round(sum15/5);
+
+
+       // Set the sum to the results, and Mean to Average.
+       document.getElementById("Results1").innerText = sum1;
+       document.getElementById("Results2").innerText = sum2;
+       document.getElementById("Results3").innerText = sum3;
+       document.getElementById("Results4").innerText = sum4;
+       document.getElementById("Results5").innerText = sum5;
+       document.getElementById("Results6").innerText = sum6;
+       document.getElementById("Results7").innerText = sum7;
+       document.getElementById("Results8").innerText = sum8;
+       document.getElementById("Results9").innerText = sum9;
+       document.getElementById("Results10").innerText = sum10;
+       document.getElementById("Results11").innerText = sum11;
+       document.getElementById("Results12").innerText = sum12;
+       document.getElementById("Results13").innerText = sum13;
+       document.getElementById("Results14").innerText = sum14;
+       document.getElementById("Results15").innerText = sum15;
+       document.getElementById("Mean1").innerText = mean1;
+       document.getElementById("Mean2").innerText = mean2;
+       document.getElementById("Mean3").innerText = mean3;
+       document.getElementById("Mean4").innerText = mean4;
+       document.getElementById("Mean5").innerText = mean5;
+       document.getElementById("Mean6").innerText = mean6;
+       document.getElementById("Mean7").innerText = mean7;
+       document.getElementById("Mean8").innerText = mean8;
+       document.getElementById("Mean9").innerText = mean9;
+       document.getElementById("Mean10").innerText = mean10;
+       document.getElementById("Mean11").innerText = mean11;
+       document.getElementById("Mean12").innerText = mean12;
+       document.getElementById("Mean13").innerText = mean13;
+       document.getElementById("Mean14").innerText = mean14;
+       document.getElementById("Mean15").innerText = mean15;
+
+       
+       //This changes the colors from Yellow to Gray 
+       for(let i = 0; i < x.length; i++)
+        {
+            if(x[i].innerHTML !== "-")
+            {
+                x[i].style.background = "#A9A9A9";
+                x[i].style.textAlign = "right";
+                if(document.getElementById("counter").innerHTML >= 0)
+                {
+                 document.getElementById("counter").innerHTML--;
+                }
+            }
+            if(x[i].innerHTML > 100)
+            {
+               x[i].innerHTML = 100;
+            }
+        }
+         //This changes the colors from Yellow to White
+        for(let j = 0; j < z.length; j++)
+        {
+            if(z[j].innerHTML !== "-")
+            {
+                z[j].style.background = "#ffffff";
+                z[j].style.textAlign = "right";
+                if(document.getElementById("counter").innerHTML >= 0)
+                {
+                 document.getElementById("counter").innerHTML--;
+                }
+            }
+            if(z[j].innerHTML > 100)
+            {
+                z[j].innerHTML = 100;
+            }
+        }
+         //If FinalGradeAverage value is below 60, turn the thing to Red background with white lettering.
+        for(let r = 0; r < maria.length; r++)
+        {  
+            if(maria[r].innerHTML < 60)
+            {
+                maria[r].style.background = "#ff0000"; //red
+                maria[r].style.color = "#ffffff"; //white
+            }
+            else
+            {
+                maria[r].style.background = "#A9A9A9"; //gray
+                maria[r].style.color = "#000000";       //white
+            }  
+        }
+        for(let l = 0; l < shadow.length; l++) //Turns Red columns in results to white is bigger than 0
+        {  
+            if(shadow[l].innerHTML < 60)
+            {
+                shadow[l].style.background = "#ff0000";
+                shadow[l].style.color = "#ffffff";
+            }
+            else
+            {
+                shadow[l].style.background = "#ffffff";
+                shadow[l].style.color = "#000000";
+            }  
+        }
+    }
+    //This function changes the Average (%) to a letter
+    function LetterGrade()
+    {
+        document.getElementById("ResultHeader").innerHTML = "Letter Grade";
+        for(let r = 0; r < Final.length; r++)
+        {  
+            if(Final[r].innerHTML >= 93 && Final[r].innerHTML <= 100)
+            { Final[r].innerHTML = "A"; }
+            else if(Final[r].innerHTML >= 90 && Final[r].innerHTML <= 92)
+            { Final[r].innerHTML = "A-"; }  
+            else if(Final[r].innerHTML >= 87 && Final[r].innerHTML <= 89)
+            { Final[r].innerHTML = "B+"; }  
+            else if(Final[r].innerHTML >= 83 && Final[r].innerHTML <= 86)
+            { Final[r].innerHTML = "B"; }  
+            else if(Final[r].innerHTML >= 80 && Final[r].innerHTML <= 82)
+            { Final[r].innerHTML = "B-"; }  
+            else if(Final[r].innerHTML >= 77 && Final[r].innerHTML <= 79)
+            { Final[r].innerHTML = "C+"; } 
+            else if(Final[r].innerHTML >= 73 && Final[r].innerHTML <= 76)
+            { Final[r].innerHTML = "C"; }  
+            else if(Final[r].innerHTML >= 70 && Final[r].innerHTML <= 72)
+            { Final[r].innerHTML = "C-"; }  
+            else if(Final[r].innerHTML >= 67 && Final[r].innerHTML <= 69)
+            { Final[r].innerHTML = "D+"; }  
+            else if(Final[r].innerHTML >= 63 && Final[r].innerHTML <= 66)
+            { Final[r].innerHTML = "D"; }  
+            else if(Final[r].innerHTML >= 60 && Final[r].innerHTML <= 62)
+            { Final[r].innerHTML = "D-"; }
+            else if(Final[r].innerHTML < 60)
+            { Final[r].innerHTML = "F"; }  
+        }
+    }
+    function GPA()
+    {
+        document.getElementById("ResultHeader").innerHTML = "4.0 Scale";
+        for(let m = 0; m < Final.length; m++)
+        {  
+            if(Final[m].innerHTML >= 93 && Final[m].innerHTML <= 100)
+            { Final[m].innerHTML = "4.0"; }
+            else if(Final[m].innerHTML >= 90 && Final[m].innerHTML <= 92)
+            { Final[m].innerHTML = "3.7"; }  
+            else if(Final[m].innerHTML >= 87 && Final[m].innerHTML <= 89)
+            { Final[m].innerHTML = "3.3"; }  
+            else if(Final[m].innerHTML >= 83 && Final[m].innerHTML <= 86)
+            { Final[m].innerHTML = "3.0"; }  
+            else if(Final[m].innerHTML >= 80 && Final[m].innerHTML <= 82)
+            { Final[m].innerHTML = "2.7"; }  
+            else if(Final[m].innerHTML >= 77 && Final[m].innerHTML <= 79)
+            { Final[m].innerHTML = "2.3"; } 
+            else if(Final[m].innerHTML >= 73 && Final[m].innerHTML <= 76)
+            { Final[m].innerHTML = "2.0"; }  
+            else if(Final[m].innerHTML >= 70 && Final[m].innerHTML <= 72)
+            { Final[m].innerHTML = "1.7"; }  
+            else if(Final[m].innerHTML >= 67 && Final[m].innerHTML <= 69)
+            { Final[m].innerHTML = "1.3"; }  
+            else if(Final[m].innerHTML >= 63 && Final[m].innerHTML <= 66)
+            { Final[m].innerHTML = "1.0"; }  
+            else if(Final[m].innerHTML >= 60 && Final[m].innerHTML <= 62)
+            { Final[m].innerHTML = "0.7"; }
+            else if(Final[m].innerHTML < 60)
+            { Final[m].innerHTML = "0.0"; }  
+        }
+    }
+    function addRows()
+    {
+       counterRow += 1;
+       if(counterRow == 1)
+       { document.getElementById("newRow1").style.visibility = "visible"; 
+         document.getElementById("counter").innerHTML = 55;
+       }
+       if(counterRow == 2)
+       { 
+        document.getElementById("newRow2").style.visibility = "visible";
+        document.getElementById("counter").innerHTML = 60;
+       }
+       if(counterRow == 3)
+       { 
+        document.getElementById("newRow3").style.visibility = "visible"; 
+        document.getElementById("counter").innerHTML = 65;
+       }
+       if(counterRow == 4)
+       { 
+        document.getElementById("newRow4").style.visibility = "visible";
+        document.getElementById("counter").innerHTML = 70;
+       }
+       if(counterRow == 5)
+       { document.getElementById("newRow5").style.visibility = "visible";
+         document.getElementById("counter").innerHTML = 75;
+       }
+    }
+    let test1 = 0;
+    function Percentage()
+    {
+        test1 += 1;
+        if(test1 % 3 == 0)
+        {
+            CalculateResults();
+        }
+        else if(test1 % 3 == 1)
+        {
+            LetterGrade();
+        }
+        else if(test1 % 3 == 2)
+        {
+            GPA();
+        }
+    }
+ </script>
